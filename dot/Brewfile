@@ -1,0 +1,56 @@
+
+#BREWs
+
+brew 'coreutils'
+
+brew 'tree'
+
+brew 'git'
+
+brew 'mas'
+brew 'mongodb'
+
+brew 'node'
+
+brew 'postgresql'
+
+brew 'rbenv'
+
+brew 'zsh'
+
+
+#CASKs
+cask 'abstract'
+cask 'adobe-acrobat-pro'
+cask 'adobe-creative-cloud'
+cask 'amethyst'
+
+cask 'craftmanager'
+cask 'cyberduck'
+
+cask 'discord'
+cask 'dropbox'
+
+cask 'endicia'
+
+cask 'firefox'
+
+cask 'google-chrome'
+
+cask 'origin'
+
+cask 'postman'
+cask 'psequel'
+
+cask 'sketch'
+cask 'slack'
+cask 'spotify'
+
+cask 'visual-studio-code'
+
+
+#TAPs
+
+tap 'homebrew/cask-drivers'
+cask 'dymo-label'
+
