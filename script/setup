@@ -1,5 +1,20 @@
-#!/bin/bash
+#!/bin/zsh
 set -e
+
+#ZPrezto 
+mkdir -p ~/.zprezto
+cd ~/.zprezto
+
+if [ -d .git ]; then
+  git pull --recurse
+else 
+  git clone --recursive https://github.com/sorin-ionescu/prezto.git ~/.zprezto
+fi
+
+setopt EXTENDED_GLOB
+for rcfile in ~/.zprezto/runcoms/^README.md(.N); do
+  ln -sfn "$rcfile" ~/.${rcfile:t}
+done
 
 # Symlink dot/* into home directory as hidden files
 for f in $(ls -d ~/.dotfiles/dot/*); do ln -sfn $f ~/.$(basename $f); done

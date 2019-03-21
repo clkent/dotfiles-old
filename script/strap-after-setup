@@ -1,8 +1,24 @@
-#!/bin/bash
+#!/bin/zsh
 set -e
 
 # After brew installed goes here!
 
-
 # Set shell to be homebrew installed zsh
 sudo dscl . -create /Users/$USER UserShell $(brew --prefix)/bin/zsh
+
+
+#ZPrezto 
+mkdir -p ~/.zprezto
+cd ~/.zprezto
+
+if [ -d .git ]; then
+  git pull --recursive
+else 
+  git clone --recursive https://github.com/sorin-ionescu/prezto.git ~/.zprezto
+fi
+
+setopt EXTENDED_GLOB
+for rcfile in ~/.zprezto/runcoms/^README.md(.N); do
+  ln -s "$rcfile" ~/.${rcfile:t}
+done
+
