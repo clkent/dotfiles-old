@@ -25,9 +25,11 @@ cask 'adobe-acrobat-pro'
 cask 'adobe-creative-cloud'
 cask 'amethyst'
 
+cask 'cheatsheet'
 cask 'craftmanager'
 cask 'cyberduck'
 
+cask 'dash'
 cask 'discord'
 cask 'dropbox'
 
