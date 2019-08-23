@@ -39,9 +39,10 @@ cask 'firefox'
 
 cask 'google-chrome'
 
+cask 'insomnia'
+
 cask 'origin'
 
-cask 'postman'
 cask 'psequel'
 
 cask 'sketch'
